@@ -6,8 +6,8 @@
 
 ## Add faucet wallet:
 
-1. Go to Carthagenet faucet https://faucet.tzalpha.net/
-2. Copy/Paste entire object into `/utils/carthage-wallet.ts`
+1. Go to Babylonnet faucet https://faucet.tzalpha.net/
+2. Copy/Paste entire object into `/utils/babylonnet-wallet.ts`
 
 ## Start development server:
 

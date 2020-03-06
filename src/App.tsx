@@ -46,7 +46,6 @@ const App: React.FC = () => {
     setTxnAddress(data.address);
     showSnackbar(true);
 
-
     const txn = Tezos.contract
       .at('KT1AyrqPRAgSMopSnxaT2pFUb2hM66U2pKZe')
       .then(contract => {
