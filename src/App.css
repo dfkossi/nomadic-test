@@ -1,0 +1,145 @@
+body {
+  display: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #35636e;
+}
+
+#wallet {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#rpc ul {
+  padding-left: 0px;
+}
+#rpc li {
+  list-style: none;
+}
+#dialog {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 500px;
+  border: 1px solid #35636e;
+  border-radius: 3px;
+}
+
+#rpc-dialog {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+#rpc h3 {
+  padding-left: 20px;
+}
+
+#header {
+  font-size: 28px;
+  padding: 20px;
+  background-color: #35636e;
+  color: white;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#rpc-content {
+  display: flex-start;
+  flex-direction: column;
+  float: left;
+  padding: 0px 20px 20px 20px;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+#rpc h3:nth-child(2) {
+  padding-bottom: 0px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+#footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 500px;
+  padding-top: 20px;
+}
+
+#address-input {
+  padding: 10px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  border: 1px solid #35636e;
+  border-radius: 3px;
+  width: 95%;
+}
+
+#rpc-input {
+  padding: 10px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  border: 1px solid #35636e;
+  border-radius: 3px;
+  width: 95%;
+}
+
+#show-balance-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #35636e;
+  border-radius: 3px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #35636e;
+  transition: background 0.3s, color 0.3s;
+}
+
+#show-balance-button:hover {
+  background: #35636e;
+  color: white;
+}
+
+#balance-output {
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 48px;
+  color: #333;
+}
+
+#error-message {
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #c73d18;
+  background: rgba(199, 61, 24, 0.3);
+}
+
+.taquito-logo {
+  background-image: url("/assets/built-with-taquito.png");
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
