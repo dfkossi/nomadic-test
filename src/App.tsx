@@ -85,13 +85,6 @@ const App: React.FC = () => {
     return txn;
   };
 
-  const [state, setState] = React.useState({
-    result: ""
-  })
-  function handleChange(evt: any) {
-    setState({ result: evt.target.value });
-  }
-
   const closeSnackbar = () => {
     showSnackbar(false);
   };
@@ -140,7 +133,6 @@ const App: React.FC = () => {
             <div id="balance-form">
               <h1>EntryPoints</h1>
               <form >
-                <input placeholder="Receiving Address" id="address-input" name="address" ref={register} />
                 <br />
                 <input placeholder="First Value" id="address-input" name="firstNumber" ref={register} />
                 <input placeholder="Second Value" id="address-input" name="secondNumber" ref={register} />
@@ -148,8 +140,6 @@ const App: React.FC = () => {
                 <button onClick={handleSubmit(onAddition)}>Addition</button>
                 <button onClick={handleSubmit(onSquare)}>Square</button>
                 <button onClick={handleSubmit(onMultiply)}>Multiply</button>
-                <label>Result</label>
-                <input placeholder="Result" value={state.result} id="result" onChange={handleChange} name="result" ref={register} />
               </form>
             </div>
           </div>
